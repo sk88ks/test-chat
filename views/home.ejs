@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel='stylesheet' href='/stylesheets/bootstrap.css' />
+		<link rel='stylesheet' href='/stylesheets/bootstrap-responsive.css' />
+		<link rel='stylesheet' href='/stylesheets/login.css' />
+		<script src="http://code.jquery.com/jquery.js"></script>
+		<script src="javascripts/config/config.js"></script>
+		<script src="javascripts/bootstrap.js"></script>
+		<script src="javascripts/home.js"></script>
+		<!-script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.10/socket.io.min.js"></script->
+		<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+	</head>
+	<body>
+		<input type="hidden" id="userId" value=<%= userId %> />
+		<input type="hidden" id="userName" value=<%= userName %> />
+		<div class="container-fluid">
+			<div class="row-fluid">
+				<div class="offset4 span4">
+				<ul class="nav nav-tabs">
+					<li class="tab-list users active">
+						<a class="tab-list" href="#">Users</a>
+					</li>
+					<li class="tab-list not-active rooms">
+						<a class="tab-list" href="#">Rooms</a>
+					</li>
+				</ul>
+				<div class="body users">
+					<h2 class="form-signin-heading">Please create chat room</h2>
+					<input type="text" id="roomName" name="roomName" lass="input-block-level" placeholder="Room name">
+					<button class="btn btn-large btn-primary" id="create-room" type="submit">Create</button>
+					<ul class="users">
+						<% data.users.forEach(function(user){ %>
+						<li>
+							<label class="checkbox">
+								<input type="checkbox" class="roomMembers" value=<%= user.userId %>><%= user.userName %></input>
+							</label>
+						</li>
+						<% }); %>
+					</ul>
+				</div>
+
+				<div class="body rooms not-active">
+					<ul class="rooms">
+						<h2 class="form-signin-heading">Please select chat room</h2>
+						<% data.rooms.forEach(function(room){ %>
+						<li>
+							<label>
+								<a class="chat-link" di="<%= room.roomId %>" name="<%= room.roomName %>" href="<%= address %>/chat/<%= room.roomName %>?id=<%= room.roomId %>"><%= room.roomName %></a>
+							</label>
+						</li>
+						<% }); %>
+					</ul>
+				</div>
+				</div>
+			</div>
+		</div>
+
+
+	</body>
+</html>

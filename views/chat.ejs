@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel='stylesheet' href='/stylesheets/bootstrap.css' />
+		<link rel='stylesheet' href='/stylesheets/bootstrap-responsive.css' />
+		<link rel='stylesheet' href='/stylesheets/login.css' />
+		<script src="http://code.jquery.com/jquery.js"></script>
+		<script src="javascripts/config/config.js"></script>
+		<script src="javascripts/bootstrap.js"></script>
+		<script src="javascripts/chat.js"></script>
+		<!-script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.10/socket.io.min.js"></script->
+		<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row-fluid">
+				<h2 class="form-signin-heading"><%= roomName %></h2>
+				<div class="offset4 span4">
+					<textarea rows="3"></textarea>
+					<button class="btn btn-large btn-primary comment" type="submit">Send</button>
+					<% comments.forEach(function(comment){ %>
+					<li>
+						<span class="label <% if(comment.userId === userId){ %><%= label-success %><% } %>"><%= comment.comment %></span>
+					</li>
+					<% }); %>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

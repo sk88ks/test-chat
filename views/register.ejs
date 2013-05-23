@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title><%= title %></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel='stylesheet' href='/stylesheets/bootstrap.css' />
+		<link rel='stylesheet' href='/stylesheets/login.css' />
+		<link rel='stylesheet' href='/stylesheets/bootstrap-responsive.css' />
+		<script src="http://code.jquery.com/jquery.js"></script>
+		<script src="javascripts/bootstrap.js"></script>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row-fluid">
+				<div class="offset4 span4">
+					<h2 class="form-signin-heading">Please specify</h2>
+					<form action="/register" method="post">
+						<input type="text" name="userName" class="input-block-level" placeholder="Your name">
+						<input type="password" name="password" class="input-block-level" placeholder="Password">
+						<input type="password" class="input-block-level" placeholder="Re-Password">
+						<button class="btn btn-large btn-primary" type="submit">Register</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
