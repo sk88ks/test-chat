@@ -47,7 +47,7 @@
 						<% data.rooms.forEach(function(room){ %>
 						<li>
 							<label>
-								<a class="chat-link" di="<%= room.roomId %>" name="<%= room.roomName %>" href="<%= address %>/chat/<%= room.roomName %>?id=<%= room.roomId %>"><%= room.roomName %></a>
+								<a class="chat-link" di="<%= room.roomId %>" name="<%= room.roomName %>" href="<%= address %>/chat/<%= room.roomName %>?name=<%= room.roomName %>&id=<%= room.roomId %>"><%= room.roomName %></a>
 							</label>
 						</li>
 						<% }); %>

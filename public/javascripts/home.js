@@ -5,8 +5,8 @@ $(function(){
 	var userId = $('input#userId').val();
 	var userName = $('input#userName').val();
 	console.log(userId + userName);
-	socket.on('connected', function(){
-		socket.emit('init', {userId: userId, userName: userName});
+	socket.on('home-connected', function(){
+		socket.json.emit('init', {userId: userId, userName: userName});
 	});
 
 	socket.on('join-home', function(data){
@@ -25,11 +25,11 @@ $(function(){
 	});
 
 	socket.on('invitation', function(data){
-		$('ul.rooms').append('<li><label><a class="chat-link" id="' + data.roomId +'" name="' + data.roomName + '" href="' + info.host + info.port + '/chat/' + data.roomName + '">'+ data.roomName + '</a></label></li>');
+		$('ul.rooms').append('<li><label><a class="chat-link" id="' + data.roomId +'" name="' + data.roomName + '" href="' + info.host + info.port + '/chat?name=' + data.roomName + '&id=' + data.roomId + '">'+ data.roomName + '</a></label></li>');
 	});
 
 	socket.on('message', function(data) {
-
+		console.log(data);
 	});
 
 	$('#create-room').on('click', function(e){
@@ -76,4 +76,5 @@ $(function(){
 		socket.json.emit('join-chat', {'roomId': roomId, 'roomName': roomName});
 		window.location = link;
 	});
+
 });
