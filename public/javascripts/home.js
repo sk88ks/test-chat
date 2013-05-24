@@ -22,7 +22,8 @@ $(function(){
 		console.log('created-room');
 		var roomId = data.roomId;
 		var roomName = data.roomName;
-		window.location = info.host + ':' + info.port + '/chat/' + roomName + '?id=' + roomId;
+		socket.json.emit('join-chat', {'roomId': roomId, 'roomName': roomName});
+		//window.location = info.host + ':' + info.port + '/chat/' + roomName + '?id=' + roomId;
 	});
 
 	socket.on('invitation', function(data){
@@ -30,8 +31,10 @@ $(function(){
 		$('ul.rooms').append('<li><label><a class="chat-link" id="' + data.roomId +'" name="' + data.roomName + '" href="' + info.host + ':' +info.port + '/chat?name=' + data.roomName + '&id=' + data.roomId + '">'+ data.roomName + '</a></label></li>');
 	});
 
-	socket.on('message', function(data) {
-		console.log(data);
+	socket.on('joined-chat', function(data) {
+		var roomId = data.roomId;
+		var roomName = data.roomName;
+		window.location = info.host + ':' + info.port + '/chat/' + roomName + '?id=' + roomId;
 	});
 
 	$('#create-room').on('click', function(e){
