@@ -51,28 +51,28 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="42" column="0" selection-start="974" selection-end="974" vertical-scroll-proportion="0.8410596">
+                <state line="30" column="40" selection-start="733" selection-end="733" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="home.js" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="login.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/lib/login.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="35" column="25" selection-start="852" selection-end="852" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="home.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/public/javascripts/home.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="4" column="27" selection-start="87" selection-end="87" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="register.ejs" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/views/register.ejs">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="28" column="0" selection-start="1057" selection-end="1057" vertical-scroll-proportion="0.0">
+                <state line="28" column="19" selection-start="892" selection-end="892" vertical-scroll-proportion="0.46023688">
                   <folding />
                 </state>
               </provider>
@@ -130,16 +130,16 @@
           <file leaf-file-name="view.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/lib/view.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="55" column="18" selection-start="1479" selection-end="1479" vertical-scroll-proportion="0.0">
+                <state line="16" column="22" selection-start="427" selection-end="427" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="chat.js" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="chat.js" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/lib/chat.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="120" column="0" selection-start="3211" selection-end="3211" vertical-scroll-proportion="0.0">
+                <state line="72" column="60" selection-start="2259" selection-end="2259" vertical-scroll-proportion="0.3248731">
                   <folding />
                 </state>
               </provider>
@@ -163,10 +163,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="redis.js" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="redis.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/lib/redis.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="88" column="36" selection-start="2549" selection-end="2549" vertical-scroll-proportion="0.74172187">
+                <state line="88" column="36" selection-start="2549" selection-end="2549" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -205,19 +205,19 @@
         <option value="$PROJECT_DIR$/lib/auth.js" />
         <option value="$PROJECT_DIR$/views/loginIndex.ejs" />
         <option value="$PROJECT_DIR$/public/stylesheets/login.css" />
-        <option value="$PROJECT_DIR$/lib/login.js" />
         <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/views/home.ejs" />
         <option value="$PROJECT_DIR$/lib/chatRoom.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/home.js" />
         <option value="$PROJECT_DIR$/views/chat.ejs" />
-        <option value="$PROJECT_DIR$/lib/view.js" />
         <option value="$PROJECT_DIR$/public/javascripts/chat.js" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/public/javascripts/config/config.js" />
         <option value="$PROJECT_DIR$/config/index.js" />
-        <option value="$PROJECT_DIR$/lib/chat.js" />
         <option value="$PROJECT_DIR$/lib/redis.js" />
+        <option value="$PROJECT_DIR$/lib/login.js" />
+        <option value="$PROJECT_DIR$/lib/view.js" />
+        <option value="$PROJECT_DIR$/lib/chat.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/home.js" />
       </list>
     </option>
   </component>
@@ -299,6 +299,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="javascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test-chat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test-chat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -445,13 +459,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="586" selection-end="586" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/login.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="0" selection-start="778" selection-end="778" vertical-scroll-proportion="0.0">
@@ -466,13 +473,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="108" column="0" selection-start="2527" selection-end="2527" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/chatRoom.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="42" selection-start="453" selection-end="453" vertical-scroll-proportion="0.0">
@@ -482,29 +482,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/auth.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="10" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/home.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="19" selection-start="735" selection-end="735" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="27" selection-start="87" selection-end="87" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/chat.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="547" selection-end="547" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="2" column="31" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1369192799000" expanded="true" signature="45:120" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -522,13 +503,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/view.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="18" selection-start="1479" selection-end="1479" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="4" selection-start="234" selection-end="234" vertical-scroll-proportion="0.0">
@@ -538,21 +512,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="0" selection-start="974" selection-end="974" vertical-scroll-proportion="0.8410596">
+        <state line="30" column="40" selection-start="733" selection-end="733" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/chat.js">
+    <entry file="file://$PROJECT_DIR$/views/register.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="0" selection-start="3211" selection-end="3211" vertical-scroll-proportion="0.0">
+        <state line="28" column="0" selection-start="1057" selection-end="1057" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/chat.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="547" selection-end="547" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/home.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="19" selection-start="735" selection-end="735" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/redis.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="36" selection-start="2549" selection-end="2549" vertical-scroll-proportion="0.74172187">
+        <state line="88" column="36" selection-start="2549" selection-end="2549" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="25" selection-start="852" selection-end="852" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/view.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="22" selection-start="427" selection-end="427" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/chat.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="60" selection-start="2259" selection-end="2259" vertical-scroll-proportion="0.3248731">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="19" selection-start="892" selection-end="892" vertical-scroll-proportion="0.46023688">
           <folding />
         </state>
       </provider>
