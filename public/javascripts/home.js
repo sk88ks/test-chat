@@ -31,11 +31,14 @@ $(function(){
 		$('ul.rooms').append('<li><label><a class="chat-link" id="' + data.roomId +'" name="' + data.roomName + '" href="' + info.host + ':' +info.port + '/chat?name=' + data.roomName + '&id=' + data.roomId + '">'+ data.roomName + '</a></label></li>');
 	});
 
+	/*
 	socket.on('joined-chat', function(data) {
 		var roomId = data.roomId;
 		var roomName = data.roomName;
-		window.location = info.host + ':' + info.port + '/chat/' + roomName + '?id=' + roomId;
+		var link = data.link;
+		window.location = link;
 	});
+	*/
 
 	$('#create-room').on('click', function(e){
 		var that = $(this);
@@ -78,7 +81,7 @@ $(function(){
 		var link = that.attr('href');
 		var roomId = that.attr('id');
 		var roomName = that.attr('name');
-		socket.json.emit('join-chat', {'roomId': roomId, 'roomName': roomName});
+		socket.json.emit('select-chat', {'roomId': roomId, 'roomName': roomName, 'link': link});
 		window.location = link;
 	});
 

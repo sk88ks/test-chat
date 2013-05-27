@@ -19,15 +19,17 @@
 		<input type="hidden" id="roomName" value=<%= roomName %> />
 		<div class="container-fluid">
 			<div class="row-fluid">
-				<h2 class="form-signin-heading"><%= roomName %></h2>
 				<div class="offset4 span4">
+				<h2 class="form-signin-heading"><%= roomName %></h2>
 					<textarea name="comment" class="comment" rows="3"></textarea>
 					<button class="btn btn-large btn-primary comment" id="<%= roomId %>" type="submit">Send</button>
-					<% comments.forEach(function(comment){ %>
-					<li>
-						<span class="label <% if(comment.userId === userId){ %><%= label-success %><% } %>"><%= comment.comment %></span>
-					</li>
-					<% }); %>
+					<ul class="message">
+						<% comments.forEach(function(comment){ %>
+						<li>
+							<span class="label <% if(comment.userId === userId){ %>label-success<% } %>"><%= comment.userName %> : <%= comment.comment %></span>
+						</li>
+						<% }); %>
+					</il>
 				</div>
 			</div>
 		</div>

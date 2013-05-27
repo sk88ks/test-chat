@@ -6,9 +6,20 @@ $(function(){
 	var chat = io.connect('/chat/' + roomName);
 
 	chat.on('chat-connected', function(){
-		socket.json.emit('init-chat', {userId: userId, userName: userName, roomId: roomId});
+		chat.json.emit('init-chat', {userId: userId, userName: userName, roomId: roomId});
 	});
 
+	chat.on('message', function(data){
+		console.log(data);
+		var messageUserId = data.userId;
+		var usrName = data.userName;
+		var comment = data.comment;
+		if(userId === messageUserId) {
+			$('ul.message').append('<li><span class="label label-success">' + userName + ' : ' + comment + '</span></li>');
+		}else {
+			$('ul.message').append('<li><span class="label">' + userName + ' : ' +comment+ '</span></li>');
+		}
+	});
 
 	$('button.comment').on('click', function(e){
 		var roomId = $(this).attr('id');
