@@ -22,23 +22,22 @@ $(function(){
 		console.log('created-room');
 		var roomId = data.roomId;
 		var roomName = data.roomName;
-		socket.json.emit('join-chat', {'roomId': roomId, 'roomName': roomName});
+		var link = info.host + ':' + info.port + '/chat/' + roomName + '?id=' + roomId;
+		socket.json.emit('select-chat', {'roomId': roomId, 'roomName': roomName, 'link': link});
 		//window.location = info.host + ':' + info.port + '/chat/' + roomName + '?id=' + roomId;
 	});
 
 	socket.on('invitation', function(data){
 		console.log('invitation');
-		$('ul.rooms').append('<li><label><a class="chat-link" id="' + data.roomId +'" name="' + data.roomName + '" href="' + info.host + ':' +info.port + '/chat?name=' + data.roomName + '&id=' + data.roomId + '">'+ data.roomName + '</a></label></li>');
+		$('ul.rooms').append('<li><label><a class="chat-link" id="' + data.roomId +'" name="' + data.roomName + '" href="' + info.host + ':' +info.port + '/chat/' + data.roomName + '?name=' + data.roomName + '&id=' + data.roomId + '">'+ data.roomName + '</a></label></li>');
 	});
 
-	/*
 	socket.on('joined-chat', function(data) {
 		var roomId = data.roomId;
 		var roomName = data.roomName;
 		var link = data.link;
 		window.location = link;
 	});
-	*/
 
 	$('#create-room').on('click', function(e){
 		var that = $(this);

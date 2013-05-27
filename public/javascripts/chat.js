@@ -12,7 +12,7 @@ $(function(){
 	chat.on('message', function(data){
 		console.log(data);
 		var messageUserId = data.userId;
-		var usrName = data.userName;
+		var userName = data.userName;
 		var comment = data.comment;
 		if(userId === messageUserId) {
 			$('ul.message').append('<li><span class="label label-success">' + userName + ' : ' + comment + '</span></li>');
@@ -24,6 +24,7 @@ $(function(){
 	$('button.comment').on('click', function(e){
 		var roomId = $(this).attr('id');
 		var comment = $('textarea.comment').val();
+		$('textarea.comment').val('');
 		chat.json.emit('send-comment', {'roomId': roomId, 'comment': comment});
 	});
 });
